@@ -441,6 +441,31 @@ const nextConfig = {
   async redirects() {
     const redirects = [
       {
+        source: "/",
+        destination: "/i",
+        permanent: false,
+      },
+      {
+        source: "/meet",
+        destination: "/i/meet",
+        permanent: false,
+      },
+      {
+        source: "/chat",
+        destination: "/i/chat",
+        permanent: false,
+      },
+      {
+        source: "/discuss",
+        destination: "/i/discuss",
+        permanent: false,
+      },
+      {
+        source: "/long",
+        destination: "/i/long",
+        permanent: false,
+      },
+      {
         source: "/api/app-store/:path*",
         destination: "/app-store/:path*",
         permanent: true,
